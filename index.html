@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elizabeth Nangila | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,29 +29,31 @@
   </header>
 
   <main>
-   <section class="hero" id="home">
-  <div class="hero-container">
+  <section class="hero" id="home">
+  <p class="hero-greeting">Hello, I'm</p>
 
-    <div class="hero-text">
-      <p class="hero-greeting">Hello, I'm</p>
-      <h1>Elizabeth Nangila</h1>
-      <h2 class="hero-title">Aspiring Full-Stack Web Developer</h2>
-      <p class="hero-bio">
-        I build clean, responsive websites and web apps with HTML, CSS and JavaScript. I enjoy turning ideas into smooth, user-friendly experiences.
-      </p>
+  <h1 class="hero-name" aria-label="Elizabeth Nangila">
+    <span class="line"><span class="word">ELIZABETH</span></span>
+    <span class="line"><span class="word">NANGILA</span></span>
+  </h1>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn btn-gold">View My Work</a>
-        <a href="resume/resume.pdf" class="btn btn-outline" download>Download Resume</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
-      </div>
+  <div class="hero-image">
+    <img src="images/profile.jpg" alt="Portrait of Elizabeth Nangila">
+  </div>
+
+  <div class="hero-info">
+    <h2 class="hero-title">Aspiring Full-Stack Web Developer</h2>
+    <p class="hero-bio">
+      I build clean, responsive websites and web apps with HTML, CSS and JavaScript. I enjoy turning ideas into smooth, user-friendly experiences.
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-gold">View My Work</a>
+      <a href="resume/resume.pdf" class="btn btn-outline" download>Download Resume</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
     </div>
-
-    <div class="hero-image">
-   <img src="images/profile.jpg" alt="Portrait of Elizabeth Nangila">
-    </div>
-
+  </div>
 </section>
+
     <section class="section" id="about">
   <h2 class="section-title">About Me</h2>
 
@@ -56,7 +61,7 @@
 
     <div class="about-text">
       <p>
-        I'm a second-year Bachelor of Science in Business Innovation Technology Management (BBITM) student at Jomo Kenyatta University of Agriculture and Technology (JKUAT), with a strong interest in technology, innovation and digital solutions. I'm a fast learner, adaptable, and committed to continuous growth.
+        Am a Bachelor of Science in Business Innovation Technology Management (BBITM) student at Jomo Kenyatta University of Agriculture and Technology (JKUAT), with a strong interest in technology, innovation and digital solutions. I'm a fast learner, adaptable, and committed to continuous growth.
       </p>
       <p>
         Through my web development internship at Sqrock IT Solutions, I'm turning that interest into real projects, from booking platforms to a freelancing marketplace.
@@ -107,7 +112,7 @@
     </div>
   </div>
 </section>
-   <section class="section" id="skills">
+   <section class="section" id="skills" data-theme="light"></section>
   <h2 class="section-title">Skills</h2>
 
   <div class="skills-grid">
@@ -235,6 +240,13 @@
   </div>
 </section>
 
+<section class="cta">
+  <p class="cta-small">Have an idea or an opportunity?</p>
+  <a href="mailto:nangilae038@gmail.com" class="cta-link">
+    <span class="cta-line">LET'S WORK</span>
+    <span class="cta-line">TOGETHER <i class="cta-arrow">↗</i></span>
+  </a>
+</section>
    <section class="section" id="contact">
   <h2 class="section-title">Get In Touch</h2>
 
@@ -263,7 +275,7 @@
       </ul>
 
       <div class="social-row">
-        <a href="www.linkedin.com/in/elizabeth-nangila-08b083368
+       <a href="https://www.linkedin.com/in/elizabeth-nangila-08b083368" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
 
 " target="_blank" rel="noopener" class="social-link">LinkedIn</a>
         <a href="https://github.com/Elizabeth-star-tech" target="_blank" rel="noopener" class="social-link">GitHub</a>
@@ -340,6 +352,9 @@
   <p class="copyright">&copy; 2026 Elizabeth Nangila. All rights reserved.</p>
 </footer>
 
-  <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
